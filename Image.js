@@ -1,10 +1,9 @@
 'use strict';
 
-var pick = require('lodash/object/pick');
-var React = require('react-native');
-var {
+import pick from 'lodash/object/pick';
+import React, {PropTypes} from 'react';
+import {
   StyleSheet,
-  PropTypes,
   Image,
   View,
   ScrollView,
@@ -14,16 +13,16 @@ var {
   Dimensions,
   StatusBarIOS,
   Platform,
-} = React;
+} from 'react-native';
 
 var DEVICE_HEIGHT = Dimensions.get('window').height;
 var DEVICE_WIDTH = Dimensions.get('window').width;
 var DRAG_DISMISS_THRESHOLD = 120;
 var STATUS_BAR_OFFSET = (Platform.OS === 'android' ? 25 : 0);
 
-var LightboxOverlay = require('./Overlay');
-var LightboxHeader = require('./Header');
-var ZoomableImage = require('./ZoomableImage');
+import LightboxOverlay from './Overlay';
+import LightboxHeader from './Header';
+import ZoomableImage from './ZoomableImage';
 
 var Lightbox = React.createClass({
   propTypes: {

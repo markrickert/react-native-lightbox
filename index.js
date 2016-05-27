@@ -1,8 +1,8 @@
 'use strict';
 
-var LightboxNavigator = require('./Navigator');
-var LightboxOverlay = require('./Overlay');
-var LightboxImage = require('./Image');
+import LightboxNavigator from './Navigator';
+import LightboxOverlay from './Overlay';
+import LightboxImage from './Image';
 
 module.exports = {
   Navigator:  LightboxNavigator,

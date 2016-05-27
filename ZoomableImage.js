@@ -1,12 +1,11 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  PropTypes,
+import React, {PropTypes} from 'react';
+import {
   Image,
   ScrollView,
   Dimensions,
-} = React;
+} from 'react-native';
 
 var DEVICE_HEIGHT = Dimensions.get('window').height;
 var DEVICE_WIDTH = Dimensions.get('window').width;

@@ -1,9 +1,9 @@
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react';
+import {
   Navigator,
-} = React;
+} from 'react-native';
 
 var LightboxNavigator = React.createClass({
   _root: null,

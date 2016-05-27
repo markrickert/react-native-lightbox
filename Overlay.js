@@ -1,8 +1,7 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  PropTypes,
+import React, {PropTypes} from 'react';
+import {
   View,
   Text,
   Animated,
@@ -13,7 +12,7 @@ var {
   Children,
   InteractionManager,
   Platform,
-} = React;
+} from 'react-native';
 
 var cloneElement = require('react-native-clone-referenced-element');
 

@@ -1,12 +1,12 @@
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react';
+import {
   StyleSheet,
   TouchableOpacity,
   Text,
   Animated,
-} = React;
+} from 'react-native';
 
 var LightboxHeader = React.createClass({
   render: function() {
